@@ -9,7 +9,7 @@ public class Fahrenheit {
         Scanner input = new Scanner(System.in);
         System.out.println("What is your temp at 8:00 am >>> ");
         temp = (int) input.nextDouble();
-        caculateToCelsius();
+
     }
 
     public static void caculateToCelsius(int temp) {
