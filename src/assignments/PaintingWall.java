@@ -20,19 +20,20 @@ public class PaintingWall {
         caculateWallArea(wallHeight,wallWidth);
 
     }
-    public static void caculateWallArea(double wallHeight,double wallWidth){
+    public static void caculateWallArea(int wallHeight,int wallWidth){
 
-        int wallArea;
+        double wallArea;
         int numGallons;
-        wallArea = (int) (wallWidth * wallHeight);
-        numGallons = wallArea/350;
-        System.out.println("Your wall area is " + wallArea +"");
+        wallArea =  (wallWidth * wallHeight);
+        numGallons = (int) Math.ceil(wallArea/350);
+        System.out.println("Your wall area is " + wallArea +"   " );
         caculatePrice(numGallons);
 
     }
     public static void caculatePrice(int numGallons){
-        int price = (int) (numGallons * 32);
-        Math.ceil(numGallons);
+
+
+        int price = (numGallons * 32);
         System.out.println("You will need " + price + " gallons of paint");
 
     }
